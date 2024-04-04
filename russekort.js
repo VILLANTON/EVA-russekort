@@ -1,11 +1,25 @@
 navnEl = document.querySelector("#navn")
+telfEl = document.querySelector("#telf")
+russenavnEl = document.querySelector("#russenavn")
+
 navnInput = document.querySelector("#navn_input")
+telfInput = document.querySelector("#telf_input")
+skoleInput = document.querySelector("#skole")
 
 navnInput.addEventListener("input",byttNavn)
+telfInput.addEventListener("input",byttTelf)
+skoleInput.addEventListener("input",byttSkole)
 
 function byttNavn () {
     navnEl.innerHTML = navnInput.value
 }
+function byttTelf () {
+    telfEl.innerHTML = telfInput.value
+}
+function byttSkole () {
+    russenavnEl.innerHTML = skoleInput.value
+}
+
 
 
 
