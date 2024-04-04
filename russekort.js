@@ -11,6 +11,8 @@ navnInput.addEventListener("input",byttNavn)
 telfInput.addEventListener("input",byttTelf)
 skoleInput.addEventListener("input",byttSkole)
 
+russelueEl = document.querySelector("#russelue")
+
 
 
 function byttNavn () {
@@ -35,14 +37,17 @@ function displayRadioValue() {
             if(valg[i].value == "rød") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, red 100%)";
                 russetypeEl.innerHTML = "Rødruss"
+                russelueEl.style.filter = "hue-rotate(0deg)"
             }
             else if(valg[i].value == "blå") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, blue 100%)";
                 russetypeEl.innerHTML = "Blåruss"
+                
             }
             else if(valg[i].value == "grønn") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, green 100%)";
                 russetypeEl.innerHTML = "Bonderuss"
+                russelueEl.style.filter = "hue-rotate(90deg)"
             }
             else if(valg[i].value == "svart") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, black 100%)";
