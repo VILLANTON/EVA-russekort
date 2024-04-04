@@ -21,7 +21,7 @@ body{
 #russenavn{
     padding-top: 10px;
     font-size: 30px;
-    letter-spacing: 0.4em;
+    white-space: nowrap; 
     display: grid;
     grid-column-start: 1;
     grid-column-end: 10;
@@ -29,30 +29,30 @@ body{
     grid-row-end: 3;
 }
 #russetype{
-    font-size: 50px;
+    font-size: 45px;
     display: grid;
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 7;
 }
 #navn{
     display: grid;
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 7;
 }
 #telf{
     display: grid;
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 8;
 }
 #sitat{
     display: grid;
-    grid-column-start: 6;
+    grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 7;
     grid-row-end: 9;
@@ -60,21 +60,20 @@ body{
 #bilde{
     transform: rotate(-5deg);
     display: grid;
+    object-fit: cover;
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 7;
-    height: 200px;
-    width: 100px;
+    height: 150px;
+    width: 70px;
 }
 
 #main_input{
     background-color: blanchedalmond;
 }
 
-    object-fit: cover;
 
-}
 #russelue{
     display: grid;
     width: 50px;
@@ -87,3 +86,9 @@ body{
     margin-left: -15px;
     margin-top: -5px;
 }
+.russeFont {
+    font-family: "Graduate", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300px; /*endre dette til det du ønsker */
+    }
