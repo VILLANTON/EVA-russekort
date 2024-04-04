@@ -1,0 +1,62 @@
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#main2{
+    display:grid;
+    width: 475px;
+    height: 275px;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10,30px);
+    background: radial-gradient(circle at center, rgb(255, 225, 225) 0%, red 100%);
+}
+#russenavn{
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#russetype{
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+#name{
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+#mail{
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+#sitat{
+    display: grid;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+#bilde{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    height: 200px;
+    width: 100px;
+}
