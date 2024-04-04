@@ -86,6 +86,7 @@ let sizeEl = document.querySelector("#size")
 
 
 async function getJoke () {
+    console.log("q")
     const url = "https://v2.jokeapi.dev/joke/Dark"
     const data = await fetch (url)
     const json = await data.json()
@@ -103,6 +104,7 @@ async function getJoke () {
 }
 
 async function writeJoke() {
+    console.log("f")
     joke = await getJoke()
     sitatEL.innerHTML = joke // endre til riktig element selector
     console.log(joke)
