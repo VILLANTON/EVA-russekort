@@ -17,5 +17,5 @@ async function getJoke () {
 
 async function writeJoke() {
     joke = await getJoke()
-    tekstEL.innerHTML = joke
+    tekstEL.innerHTML = joke // endre til riktig element selector
 }
