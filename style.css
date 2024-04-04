@@ -3,8 +3,8 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     align-items: center;
     justify-content: center;
     height: 100vh;
