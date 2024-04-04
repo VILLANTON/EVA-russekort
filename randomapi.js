@@ -19,3 +19,16 @@ async function writeJoke() {
     joke = await getJoke()
     tekstEL.innerHTML = joke // endre til riktig element selector
 }
+
+async function getShiba () {
+    const url = "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true"
+    const data = await fetch (url)
+    const json = await data.json()
+    shibaImg = json[0]
+    return shibaImg
+}
+
+async function showShiba() {
+    await getShiba()
+    imgEl.src = shibaImg // endre til riktig element selector
+}
