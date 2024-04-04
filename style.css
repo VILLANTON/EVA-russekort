@@ -16,7 +16,7 @@ body{
     height: 275px;
     grid-template-columns: repeat(10, 50px);
     grid-template-rows: repeat(10,30px);
-    background: radial-gradient(circle at center, rgb(255, 194, 194) 0%, red 100%);
+    background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, red 100%);
 }
 #russenavn{
     padding-top: 10px;
