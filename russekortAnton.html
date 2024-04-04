@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="main1">
@@ -18,12 +19,24 @@
         <div id="russenavn">MainlandRuss 2024</div>
         <div id="bilde"><img id="bilde" src="tabby-cat.jpg" alt=""></div>
         <div id="russelue"><img id="russelue" src="Russelue.png"></div>
-        <div id="russetype">Rødruss</div>
+        <div class="russefont" id="russetype">Rødruss</div>
         <div id="name">Navn Navnesen</div>
         <div id="mail">mail@mailern.no</div>
         <div id="sitat">umorsomt sitat</div>
     </div>
+    <button id="size">SIZE</button>
 </body>
 </html>
 <script>
+    let sizeEl = document.querySelector("#size")
+    function adjustLetterSpacing() {
+        let containerWidth = document.querySelector('#main2').offsetWidth;
+        let textWidth = document.querySelector('#russenavn').offsetWidth;
+        let letterSpacing = (containerWidth - textWidth) / (document.querySelector('#russenavn').textContent.length - 1);
+        document.querySelector('#russenavn').style.letterSpacing = letterSpacing + 'px';
+    }
+
+    // Call adjustLetterSpacing initially and on window resize
+    adjustLetterSpacing();
+    sizeEl.addEventListener("click", adjustLetterSpacing);
 </script>
