@@ -1,6 +1,7 @@
 navnEl = document.querySelector("#navn")
 telfEl = document.querySelector("#telf")
 russenavnEl = document.querySelector("#russenavn")
+russetypeEl = document.querySelector("#russetype")
 
 navnInput = document.querySelector("#navn_input")
 telfInput = document.querySelector("#telf_input")
@@ -33,15 +34,19 @@ function displayRadioValue() {
         if (valg[i].checked)
             if(valg[i].value == "rød") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, red 100%)";
+                russetypeEl.innerHTML = "Rødruss"
             }
             else if(valg[i].value == "blå") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, blue 100%)";
+                russetypeEl.innerHTML = "Blåruss"
             }
             else if(valg[i].value == "grønn") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, green 100%)";
+                russetypeEl.innerHTML = "Bonderuss"
             }
             else if(valg[i].value == "svart") {
                 main2El.style.background = "radial-gradient(circle at center, rgb(255, 255, 255) 0%, black 100%)";
+                russetypeEl.innerHTML = "Svartruss"
             }
     }
 }
@@ -49,6 +54,10 @@ function displayRadioValue() {
 sitatEl = document.querySelector("#sitat")
 sitatInput = document.querySelector("#sitat_input")
 sitatInput.addEventListener("click",writeJoke)
+
+bildeEl = document.querySelector("#bilde")
+bildeInput = document.querySelector("#bilde_input")
+bildeInput.addEventListener("click",showShiba)
 
 /*
 function getSelectedRussFarge() {
@@ -86,7 +95,6 @@ let sizeEl = document.querySelector("#size")
 
 
 async function getJoke () {
-    console.log("q")
     const url = "https://v2.jokeapi.dev/joke/Dark"
     const data = await fetch (url)
     const json = await data.json()
@@ -104,13 +112,12 @@ async function getJoke () {
 }
 
 async function writeJoke() {
-    console.log("f")
     joke = await getJoke()
-    sitatEL.innerHTML = joke // endre til riktig element selector
-    console.log(joke)
+    sitatEl.innerHTML = joke // endre til riktig element selector
 }
 
 async function getShiba () {
+    console.log("q")
     const url = "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true"
     const data = await fetch (url)
     const json = await data.json()
@@ -119,6 +126,7 @@ async function getShiba () {
 }
 
 async function showShiba() {
+    console.log("f")
     await getShiba()
-    imgEl.src = shibaImg // endre til riktig element selector
+    bildeEl.src = shibaImg // endre til riktig element selector
 }

@@ -58,7 +58,7 @@ body{
     grid-row-start: 7;
     grid-row-end: 9;
 }
-#bilde{
+.bilde{
     transform: rotate(-5deg);
     display: grid;
     object-fit: cover;
