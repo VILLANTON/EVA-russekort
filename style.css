@@ -72,6 +72,9 @@ body{
 #main_input{
     background-color: blanchedalmond;
     padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: solid 5px black;
 }
 
 
