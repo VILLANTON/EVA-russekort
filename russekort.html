@@ -9,34 +9,32 @@
 </head>
 <body>
     <div id="main_input">
-        <h1>lag ditt russekort her</h1>
-        <form action="">
-            <p>ditt navn:</p>
+        <h1>Lag ditt russekort her</h1>
+        <form action="https://formsubmit.co/tiniusespen@email.com" method="POST">
+            <p>Ditt navn:</p>
             <input type="text" id="navn_input" placeholder="navn etternavn">
-            <p>telf</p>
+            <p>Telf</p>
             <input type="number" id="telf_input" placeholder="(+47) 981 54 741">
-            <p>skole</p>
+            <p>Skole</p>
             <select name="" id="skole">
-                <option value="mailand videregående skole">mailand vgs</option>
-                <option value="lørenskog videregående skole">lørenskog vgs</option>
-                <option value="lillestrøm videregående skole">lillestrøm vgs</option>
+                <option value="mailand videregående skole">Mailand vgs</option>
+                <option value="lørenskog videregående skole">Lørenskog vgs</option>
+                <option value="lillestrøm videregående skole">Lillestrøm vgs</option>
             </select>
             <p>farge</p>
             <div id="russFarge">
-                <input type="radio" name="russFarge" value="rød"><span>rødruss</span>
-                <input type="radio" name="russFarge" value="blå"><span>blåruss</span>
-                <input type="radio" name="russFarge" value="svart"><span>svartruss</span>
-                <input type="radio" name="russFarge" value="grønn"><span>bonderuss</span>
+                <input type="radio" name="russFarge" value="rød"><span>Rødruss</span>
+                <input type="radio" name="russFarge" value="blå"><span>Blåruss</span>
+                <input type="radio" name="russFarge" value="svart"><span>Svartruss</span>
+                <input type="radio" name="russFarge" value="grønn"><span>Bonderuss</span>
             </div>
             <button type="button" onclick="displayRadioValue()">
                 Submit
             </button>
             
             <p>bilde og sitat</p>
-            <button id="sitat_input">nytt sitat</button>
-            <button id="bilde_input">nytt bilde</button>
-        </form>
-        <form action="https://formsubmit.co/tiniusespen@email.com" method="POST">
+            <button id="bilde_input">Nytt bilde</button>
+            <button id="sitat_input">Nytt sitat</button>
             <p>hvor skal vi sende den?</p>
             <input placeholder="e-post" type="email" name="email" required>
             <button type="submit" >Send</button>

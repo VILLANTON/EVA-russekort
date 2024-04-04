@@ -52,11 +52,11 @@ function displayRadioValue() {
 }
 
 sitatEl = document.querySelector("#sitat")
-sitatInput = document.querySelector("#sitat_input")
+sitatInput = document.getElementById("sitat_input")
 sitatInput.addEventListener("click",writeJoke)
 
 bildeEl = document.querySelector("#bilde")
-bildeInput = document.querySelector("#bilde_input")
+bildeInput = document.getElementById("bilde_input")
 bildeInput.addEventListener("click",showShiba)
 
 /*
