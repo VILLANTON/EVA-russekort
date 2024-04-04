@@ -60,23 +60,20 @@ body{
 #bilde{
     transform: rotate(-5deg);
     display: grid;
+    object-fit: cover;
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 7;
     height: 150px;
     width: 70px;
-    height: 200px;
-    width: 100px;
 }
 
 #main_input{
     background-color: blanchedalmond;
 }
 
-    object-fit: cover;
 
-}
 #russelue{
     display: grid;
     width: 50px;
