@@ -6,19 +6,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <p>hvor skal vi sende den?</p>
-    <form action="https://formsubmit.co/tiniusespen@email.com" method="POST">
-        <input placeholder="navn" type="text" name="name" required>
-           <input placeholder="e-post" type="email" name="email" required>
-           <button type="submit">Send</button>
-    </form>
+    <div id="main_input">
+        <h1>lag ditt russekort her</h1>
+        <form action="">
+            <p>ditt navn:</p>
+            <input type="text" id="navn_input" placeholder="navn etternavn">
+            <p>russenavn</p>
+            <input type="text" id="russenavn_input" placeholder="gode gutter 7">
+            <p>telf</p>
+            <input type="number" id="telf_input" placeholder="(+47) 981 54 741">
+            <p>skole</p>
+            <select name="" id="">
+                <option value="mailand">mailand vgs</option>
+                <option value="lørenskog">lørenskog vgs</option>
+                <option value="lillestrøm">lillestrøm vgs</option>
+            </select>
+            <p>farge</p>
+            <input type="radio" name="russFarge" value="rød"><span>rødruss</span>
+            <input type="radio" name="russFarge" value="blå"><span>blåruss</span>
+            <input type="radio" name="russFarge" value="svar"><span>svartruss</span>
+            <input type="radio" name="russFarge" value="grønn"><span>bonderuss</span>
+            <p>bilde og sitat</p>
+            <button id="sitat_inpunt">nytt sitat</button>
+            <button id="bilde_input">nytt bilde</button>
+        </form>
+        <p>hvor skal vi sende den?</p>
+        <form action="https://formsubmit.co/tiniusespen@email.com" method="POST">
+            <input placeholder="navn" type="text" name="name" required>
+               <input placeholder="e-post" type="email" name="email" required>
+               <button type="submit">Send</button>
+        </form>
+    </div>
     <div id="main2">
         <div id="russenavn">MainlandRuss 2024</div>
         <div id="bilde"><img id="bilde" src="tabby-cat.jpg" alt=""></div>
         <div id="russetype">Rødruss</div>
-        <div id="name">Navn Navnesen</div>
-        <div id="mail">mail@mailern.no</div>
+        <div id="navn">Navn Navnesen</div>
+        <div id="telf">98154741</div>
         <div id="sitat">umorsomt sitat</div>
     </div>
 </body>
