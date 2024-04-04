@@ -2,6 +2,7 @@
 
 
 body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,41 +15,45 @@ body{
     height: 275px;
     grid-template-columns: repeat(10, 50px);
     grid-template-rows: repeat(10,30px);
-    background: radial-gradient(circle at center, rgb(255, 225, 225) 0%, red 100%);
+    background: radial-gradient(circle at center, rgb(255, 194, 194) 0%, red 100%);
 }
 #russenavn{
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 0.4em;
     display: grid;
-    grid-column-start: 3;
-    grid-column-end: 9;
-    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
     grid-row-end: 3;
 }
 #russetype{
+    font-size: 50px;
     display: grid;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 5;
+    grid-row-start: 3;
     grid-row-end: 7;
 }
 #name{
     display: grid;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-row-end: 7;
 }
 #mail{
     display: grid;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 7;
+    grid-row-start: 6;
     grid-row-end: 8;
 }
 #sitat{
     display: grid;
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 8;
+    grid-row-start: 7;
     grid-row-end: 9;
 }
 #bilde{
@@ -59,4 +64,16 @@ body{
     grid-row-end: 7;
     height: 200px;
     width: 100px;
+}
+#russelue{
+    display: grid;
+    width: 50px;
+    height: 50px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    z-index: 2;
+    margin-left: -15px;
+    margin-top: -5px;
 }
