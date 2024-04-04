@@ -19,6 +19,7 @@ body{
     background: radial-gradient(circle at center, rgb(255, 194, 194) 0%, red 100%);
 }
 #russenavn{
+    padding-left: 5px;
     padding-top: 10px;
     font-size: 30px;
     white-space: nowrap; 
@@ -75,6 +76,7 @@ body{
     margin-bottom: 25px;
     border-radius: 15px;
     border: solid 5px black;
+    width: 415px;
 }
 
 
@@ -97,6 +99,28 @@ body{
     font-size: 300px; /*endre dette til det du ønsker */
     }
 
-    #main_input > form > p{
-        margin-bottom: 0px;
+#main_input > form > p{
+    margin-bottom: 0px;
     }
+
+button{
+    background-color: rgb(251, 251, 251);
+    transition-duration: 0.4s;
+    font-family: "Press Start 2P";
+    padding: 3px;
+}
+
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: gray;
+}
+
+button:active{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+
+    
