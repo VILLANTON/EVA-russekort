@@ -95,6 +95,7 @@ body{
     z-index: 2;
     margin-left: -15px;
     margin-top: -5px;
+    filter: hue-rotate(0deg);
 }
 .russeFont {
     font-family: "Graduate", serif;
