@@ -71,6 +71,10 @@ body{
 
 #main_input{
     background-color: blanchedalmond;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: solid 5px black;
 }
 
 
@@ -91,4 +95,8 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 300px; /*endre dette til det du ønsker */
+    }
+
+    #main_input > form > p{
+        margin-bottom: 0px;
     }
