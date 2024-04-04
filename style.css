@@ -57,6 +57,7 @@ body{
     grid-row-end: 9;
 }
 #bilde{
+    transform: rotate(-5deg);
     display: grid;
     grid-column-start: 2;
     grid-column-end: 6;
@@ -64,6 +65,8 @@ body{
     grid-row-end: 7;
     height: 200px;
     width: 100px;
+    object-fit: cover;
+
 }
 #russelue{
     display: grid;
